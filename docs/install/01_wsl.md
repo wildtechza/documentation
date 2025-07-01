@@ -12,3 +12,8 @@ From a Terminal with elevated permissions run:
 ```
 wsl --install
 ```
+This will install WSL and the default Ubuntu distro.
+
+## Run
+
+To run WSL go into Windows Terminal and type `wsl` and hit enter.

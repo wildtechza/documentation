@@ -1,0 +1,7 @@
+releases:
+  - name: postgres-dev
+    namespace: dev-db
+    createNamespace: true  # Auto-create if missing
+    chart: charts/dependencies/postgresql
+    values:
+      - charts/dependencies/postgresql/values-dev.yaml

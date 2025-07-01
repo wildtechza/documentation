@@ -1,0 +1,32 @@
+# charts/dependencies/postgresql/values-prod.yaml
+auth:
+  existingSecret: "postgres-prod-creds"  # Reference to pre-created secret
+  username: "prod_user"
+  database: "myapp_prod"
+
+primary:
+  resources:
+    requests:
+      cpu: 1
+      memory: 2Gi
+    limits:
+      cpu: 2
+      memory: 4Gi
+  persistence:
+    enabled: true
+    size: 50Gi
+    storageClass: "gp2-encrypted"
+
+readReplicas:
+  replicaCount: 2  # HA replicas
+  persistence:
+    size: 50Gi
+
+metrics:
+  enabled: true
+  serviceMonitor:
+    enabled: true  # For Prometheus operator
+
+backup:
+  enabled: true
+  schedule: "0 3 * * *"  # Daily backups at 3AM
