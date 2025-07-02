@@ -1,6 +1,6 @@
 releases:
-  - name: postgres-dev
-    namespace: dev-db
+  - name: postgres
+    namespace: postgres
     createNamespace: true  # Auto-create if missing
     chart: charts/dependencies/postgresql
     values:
