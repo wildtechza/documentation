@@ -1,6 +1,19 @@
 # Run Postgres with Helm & Helmfile
 
-The Postgres helm chart will already be there, but to be able to pull it you would:
+In the code base you will see the following:
+
+📦learning_dotnet_kubernetes/
+└── 📂helm/
+    └── 📂charts/
+        └── 🗂️dependencies/
+            └── 🗂️postgressql/
+                ├── 📜Chart.yaml
+                ├── 📜README.md
+                ├── 📜values-dev.yaml
+                ├── 📜values-prod.yaml
+                └── 📜values.yaml
+
+
 
 Add the bitnami repo:
 ```
