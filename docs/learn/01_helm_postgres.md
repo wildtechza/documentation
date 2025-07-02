@@ -1,7 +1,7 @@
 # Run Postgres with Helm & Helmfile
 
 In the code base you will see the following:
-
+```
 📦learning_dotnet_kubernetes/
 └── 📂helm/
     └── 📂charts/
@@ -12,8 +12,7 @@ In the code base you will see the following:
                 ├── 📜values-dev.yaml
                 ├── 📜values-prod.yaml
                 └── 📜values.yaml
-
-
+```
 
 Add the bitnami repo:
 ```
