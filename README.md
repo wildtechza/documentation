@@ -2,7 +2,7 @@
 
 ## Overview
 
-You will need to know a lot more than just dotnet and Kubernetes to do full development and deployment into production, but those will be the main technologies used here. 
+You will need to know a lot more than just Dotnet and Kubernetes to do full development and deployment into production, but those will be the main technologies used here. 
 
 ## Progress
 
