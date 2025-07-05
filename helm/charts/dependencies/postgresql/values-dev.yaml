@@ -1,20 +1,5 @@
-# charts/dependencies/postgresql/values-dev.yaml
 auth:
   postgresPassword: "devpass123"  # Override only in dev, NEVER commit real passwords
   username: "dev_user"
-  database: "myapp_dev"
-
-primary:
-  resources:
-    requests:
-      cpu: 100m
-      memory: 256Mi
-  persistence:
-    enabled: false  # Disable persistent storage for dev
-    size: 1Gi
-
-readReplicas:
-  replicaCount: 0  # No replicas in dev
-
-metrics:
-  enabled: false  # Disable metrics in dev
+  database: "weather"
+  password: "newUserPassword123"

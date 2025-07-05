@@ -1,0 +1,40 @@
+env:
+  email: "admin@mycompany.com"
+  password: "mysecurepassword"
+
+serverDefinitions:
+  # Enable/disable server import
+  enabled: true
+
+  # Storage for the server JSON:
+  #   ConfigMap - plain text (good for non-secret data)
+  #   Secret    - base-64 (better for credentials)
+  resourceType: Secret
+
+  # Set to true to put raw JSON under `stringData` (handy for dry-runs/debug).
+  # Leave false to keep the default base-64 in `data`.
+  useStringData: true
+
+  # Inline server definitions (ignore if you point to an existing resource)
+  # You can use Helm templates here, e.g. Host: "{{ .Values.example.host }}"
+  servers:
+    weather:
+      Name: "Weather"
+      Group: "Servers"
+      Port: 5432
+      Username: "dev_user"
+      Password: "newUserPassword123"
+      Host: "postgres-postgresql.postgres.svc.cluster.local"
+      MaintenanceDB: "postgres"
+      ConnectionParameters: {
+        "sslmode": "disable",
+        "connect_timeout": 10000
+      }
+
+ingress:
+  enabled: false
+
+service:
+  type: NodePort 
+  port: 80
+  nodePort: 30080

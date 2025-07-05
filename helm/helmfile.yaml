@@ -1,7 +1,25 @@
 releases:
   - name: postgres
     namespace: postgres
-    createNamespace: true  # Auto-create if missing
+    createNamespace: true
     chart: charts/dependencies/postgresql
     values:
+      - charts/dependencies/postgresql/values.yaml
       - charts/dependencies/postgresql/values-dev.yaml
+  - name: pgadmin
+    namespace: postgres
+    createNamespace: true
+    chart: charts/dependencies/pgadmin4
+    values:
+      - ./charts/dependencies/pgadmin4/values.yaml
+      - ./charts/dependencies/pgadmin4/values-dev.yaml
+  - name: ingress-nginx
+    chart: ./charts/dependencies/ingress-nginx  # Local path
+    namespace: ingress-nginx
+    createNamespace: true
+    values:
+      - controller:
+          service:
+            type: NodePort  # For local clusters
+          admissionWebhooks:
+            enabled: false
