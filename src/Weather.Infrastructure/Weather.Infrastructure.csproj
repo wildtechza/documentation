@@ -7,11 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Repositories/" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.6" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.6" />
+    <ProjectReference Include="../Weather.Application/Weather.Application.csproj" />
+    <ProjectReference Include="../Weather.Core/Weather.Core.csproj" />
   </ItemGroup>
 
 </Project>

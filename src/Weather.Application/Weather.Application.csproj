@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="../Weather.Core/Weather.Core.csproj" />
+  </ItemGroup>
+
 </Project>
