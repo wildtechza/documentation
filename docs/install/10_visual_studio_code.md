@@ -12,4 +12,5 @@ https://code.visualstudio.com/
 
 ## Setup
 
-Link/Connect VS code to WSL.
+1. Link/Connect VS code to WSL.
+2. Install `C# Dev Kit` Extension
