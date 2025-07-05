@@ -15,6 +15,8 @@ Kubernetes is a container orchestrator, it runs containers like Docker but has m
 
 ## Install
 
+> **📝 Note:** Install in Windows
+
 https://www.docker.com/products/docker-desktop/
 
 

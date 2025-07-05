@@ -6,4 +6,6 @@ Dotnet is a Software Development Kit (SDK) which allows us to compile and run do
 
 ## Install
 
+> **📝 Note:** Install in WSL
+
 https://dotnet.microsoft.com/en-us/download/dotnet/8.0

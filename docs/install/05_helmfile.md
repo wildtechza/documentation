@@ -6,6 +6,8 @@ Helmfile allows us to easily run/apply multiple helm files as well as other usef
 
 ## Install
 
+> **📝 Note:** Install in WSL
+
 Run wsl and follow the Linux install commands here:
 
 https://helmfile.readthedocs.io/en/latest/#running-as-a-container

@@ -6,6 +6,8 @@ Helm is a package manager for Kubernetes. It can be used to retrieve and run exi
 
 ## Install
 
+> **📝 Note:** Install in WSL
+
 Run wsl and follow the Linux install commands here:
 
 https://helm.sh/docs/intro/install/
